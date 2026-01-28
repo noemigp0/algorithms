@@ -1,15 +1,17 @@
+package com.binary_search.vanilla_binarysearch_0704;
+/*
+* Standard binary search
+* Note: since arrays are 0-indexed, the right pointer should be set to nums.length - 1
+* BigO: O(log n) time with O(1) extra space
+*/
+
 class Solution {
     public int search(int[] nums, int target) {
         int left = 0;
         int right = nums.length -1 ;
-        //  0 1 2 3 4 5
-        //[-1,0,3,5,9,12]
-        //        m 
-        //          l
-        //            r
 
         while( left <= right){
-            int mid = left + (right - left) / 2; //4 + (5 - 4) / 2 = 5 
+            int mid = left + (right - left) / 2;
 
             if(nums[mid] == target){
                 return mid;
