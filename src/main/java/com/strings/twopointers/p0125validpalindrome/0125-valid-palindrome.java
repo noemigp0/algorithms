@@ -1,3 +1,10 @@
+package com.strings.twopointers.p0125validpalindrome;
+/*Notes: This solution avoid using regex function
+* Big 0:
+*   Time complexity: O(n)
+*   Space Complexity: O(1)
+* */
+
 class Solution {
     public boolean isPalindrome(String s) {
         //"A man, a plan, a canal: Panama"

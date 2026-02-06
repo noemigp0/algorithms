@@ -1,4 +1,4 @@
-package com.binary_search.vanilla_binarysearch_0704;
+package com.binarysearch.p0704vanillabinarysearch;
 /*
 * Standard binary search
 * Note: since arrays are 0-indexed, the right pointer should be set to nums.length - 1
