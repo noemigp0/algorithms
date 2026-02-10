@@ -1,3 +1,13 @@
+package com.arrays.p0011ContainerwithMostWater;
+
+/*
+ * Algorithm: Two pointers
+ *
+ * Big O:
+ * Time complexity: O(n)
+ * Space complexity O(1)
+ */
+
 class Solution {
     public int maxArea(int[] height) {
        // 0 1 2 3 4 5 6 7 8
