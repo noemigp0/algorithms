@@ -1,3 +1,8 @@
+package com.arrays.twoPointers.p0027RemoveElement;
+
+/*Big O
+* Time complexity: O(N)
+* Space complecity: O(1)*/
 class Solution {
     public int removeElement(int[] nums, int val) {
         // 0 1 2 3 4 5 6 7

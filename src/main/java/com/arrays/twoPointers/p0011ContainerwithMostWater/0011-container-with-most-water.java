@@ -1,4 +1,4 @@
-package com.arrays.p0011ContainerwithMostWater;
+package com.arrays.twoPointers.p0011ContainerwithMostWater;
 
 /*
  * Algorithm: Two pointers

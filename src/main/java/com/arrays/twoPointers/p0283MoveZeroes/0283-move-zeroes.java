@@ -1,3 +1,9 @@
+package com.arrays.twoPointers.p0283MoveZeroes;
+
+/* Big(O)
+* Time complexity: O(n)
+* Space complexity: O(1)
+* */
 class Solution {
     public void moveZeroes(int[] nums) {
         // 0 1 2 3  4   5
