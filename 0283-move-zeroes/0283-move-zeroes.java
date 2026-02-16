@@ -9,19 +9,21 @@ class Solution {
         int writer = 0;
         int n = nums.length;
 
-        while(writer < n){
-            if(reader == n){
-                nums[writer] = 0;
-                writer++;
-            } else if(nums[reader] != 0){
+        while(reader < n){
+            if(nums[reader] != 0){
                 nums[writer] = nums[reader];
-                reader++;
+                //reader++;
                 writer++;
-                
-            } else {
+   
+            } 
                 reader++;
                
-            }
+            
+        }
+
+        for (int i = writer; i < n; i++){
+            nums[i] = 0;
+
         }
 
 
