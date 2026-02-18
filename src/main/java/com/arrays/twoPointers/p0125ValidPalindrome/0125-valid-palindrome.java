@@ -1,3 +1,11 @@
+package com.arrays.twoPointers.p0125ValidPalindrome;
+
+/**
+ * Big O:
+ * Time complexity: O(n)
+ * Space complexity: O(1)
+ */
+
 class Solution {
     public boolean isPalindrome(String s) {
 

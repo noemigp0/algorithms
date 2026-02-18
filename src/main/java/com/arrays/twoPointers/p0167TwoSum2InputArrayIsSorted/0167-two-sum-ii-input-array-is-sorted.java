@@ -1,3 +1,9 @@
+package com.arrays.twoPointers.p0167TwoSum2InputArrayIsSorted;
+
+/*
+* Big O:
+* Time complexity: O(n)
+* Space complexity: O(1) */
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
         int[] result = new int[2];
@@ -7,8 +13,6 @@ class Solution {
         //[2,7,11,15], target = 9
         // l
         //   r
-
-        
 
         while(left < right){
             int sum = numbers[left] + numbers[right];
