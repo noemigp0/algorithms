@@ -1,3 +1,5 @@
+package com.arrays.p0283MoveZeroes;
+
 class Solution {
     public void moveZeroes(int[] nums) {
         //[1,2,12,0,0]

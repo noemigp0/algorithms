@@ -1,3 +1,5 @@
+package com.arrays.twoPointers.p0977SquaresOfASortedArray;
+
 class Solution {
     public int[] sortedSquares(int[] nums) {
         //  0  1 2 3  4

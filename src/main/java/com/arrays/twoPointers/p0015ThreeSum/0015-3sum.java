@@ -1,5 +1,11 @@
+package com.arrays.twoPointers.p0015ThreeSum;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 class Solution {
-    public List<List<Integer>> threeSum(int[] nums) { 
+    public List<List<Integer>> threeSum(int[] nums) {
         //   0  1  2 3 4 5 
         // [-4,-1,-1,0,1,2 ]       [[-1,-1,2],[-1,0,1],[-1,0,1]]
         //         i
