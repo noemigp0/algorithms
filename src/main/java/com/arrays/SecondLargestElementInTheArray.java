@@ -27,7 +27,7 @@ public class SecondLargestElementInTheArray {
 
     public static void main (String args[]){
 
-        int secondLargestElement = getSecondLargestElementImproved(new int[]{12, 35, 1, 10, 34, 1});
+        int secondLargestElement = getSecondLargestElementWithOneForLoop(new int[]{10, 10, 10});
         System.out.print(secondLargestElement);
 
     }
@@ -53,7 +53,24 @@ public class SecondLargestElementInTheArray {
     }
 
 
-    public static int getSecondLargestElementImproved(int[] input){
-        return 0;
+    public static int getSecondLargestElementWithOneForLoop(int[] input){
+        //  0   1  2   3   4  5
+        //[ 10, 5, 10}
+        //         #
+
+        int highestNumber = Integer.MIN_VALUE; //10
+        int secondHighestNumber = Integer.MIN_VALUE;
+
+        for(int i = 0; i < input.length; i++){
+
+            if(input[i] >= highestNumber){
+                highestNumber = input[i];
+
+            } else {
+                secondHighestNumber = Math.max(input[i], secondHighestNumber); //5
+            }
+
+        }
+        return secondHighestNumber == Integer.MIN_VALUE ? highestNumber: secondHighestNumber;
     }
 }
