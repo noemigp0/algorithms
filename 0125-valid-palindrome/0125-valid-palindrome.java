@@ -1,17 +1,13 @@
 class Solution {
     public boolean isPalindrome(String s) {
-        //a
-
-        //a man, a plan, a canal: panama
-        //          l
-        //                       r
-
-        //AmanaplanacanalPanama
-
+        //a man, a plan, a canal: Panama
+        //                 l                     
+        //                 r
         int left = 0;
         int right = s.length() -1;
 
-        while(left < right){
+        while(left <= right){
+
             if(!Character.isLetterOrDigit(s.charAt(left))){
                 left++;
                 continue;
@@ -22,17 +18,17 @@ class Solution {
                 continue;
             }
 
-
             if(Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))){
-                    return false;
+                return false;
+            
             }
+
             left++;
             right--;
 
-
-        } 
+        }
 
         return true;
-        
+  
     }
 }
