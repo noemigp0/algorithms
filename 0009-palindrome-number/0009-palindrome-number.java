@@ -1,22 +1,23 @@
 class Solution {
     public boolean isPalindrome(int x) {
-        if (x < 0 ){return false;}
+        String stringOfX = String.valueOf(x);
+        int left = 0;
+        int right = stringOfX.length() -1;
 
-        //121 
-
-        int reversed = 0;
-        int n = x;
-
-        while(n > 0){
-        int lastDigit = n % 10;//1
-        reversed = reversed * 10 + lastDigit; //121
-
-        n = n /10;//0.11
+        if(stringOfX.charAt(right) == 0){
+            return false;
         }
 
-        return x == reversed;
+        while(left <= right){
+            if(stringOfX.charAt(left) != stringOfX.charAt(right)){
+                return false;
+            }
+            left++;
+            right--;
 
+        }
 
+        return true;
         
     }
 }
