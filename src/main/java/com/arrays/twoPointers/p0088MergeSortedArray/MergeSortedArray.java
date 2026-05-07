@@ -1,4 +1,13 @@
-class Solution {
+package com.arrays.twoPointers.p0088MergeSortedArray;
+
+
+/*
+* Big O
+* Time complexity: O(n+m)
+* Space complexity: O(1)
+* */
+
+class MergeSortedArray {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
 
         //         0 1 2 3 4 5
