@@ -1,13 +1,28 @@
 class Solution {
     public boolean isPalindrome(String s) {
 
-        //"amanaplancanalpanama"
+        //"amanaplanacanalPanama"
+        //  l
+        //                    r
 
-        String cleanS = s.replaceAll("[^a-zA-Z0-9]+", "").toLowerCase();
-        StringBuilder sb = new StringBuilder(cleanS).reverse();
-        String reversed = sb.toString();
+        String cleanS = s.replaceAll("[^a-zA-Z0-9]+","");
 
-        return cleanS.equals(reversed);
+        int left = 0;
+        int right = cleanS.length() -1;
+
+        while(left <= right){
+
+            if(Character.toLowerCase(cleanS.charAt(left)) != Character.toLowerCase(cleanS.charAt(right))){
+                return false;
+            }
+
+            left++;
+            right--;
+
+        }
+
+        return true;
+
         
     }
 }
