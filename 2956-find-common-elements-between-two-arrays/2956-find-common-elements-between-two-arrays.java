@@ -23,7 +23,7 @@ class Solution {
             }
         }
 
-        Set<Integer> nums1Set = new HashSet();
+        Set<Integer> nums1Set = new HashSet<>();
         for(Integer element: nums1){
             nums1Set.add(element);
         }
