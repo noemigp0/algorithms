@@ -1,14 +1,16 @@
-class Solution {
+package com.arrays.sets.p2956FindCommonElementsBetweenTwoArrays;
+
+import java.util.HashSet;
+import java.util.Set;
+
+/*
+* Big O
+* Time complexity: O(n)
+* Space complexity: O(n)
+* */
+
+public class FindCommonElementsBetweenTwoArrays {
     public int[] findIntersectionValues(int[] nums1, int[] nums2) {
-
-        // 0 1 2
-        //[2,3,2]
-        //     i
-        //[1,2]
-        //   i
-        //nums2Set   ->  1,2
-        //nums1Set   ->  2,3
-
 
         //Elements in nums1 available in nums2
         Set<Integer> nums2Set = new HashSet<>();
