@@ -13,23 +13,19 @@ public class ContainsDuplicate {
     * Space complexity: O(n)
     * */
     public boolean containsDuplicate(int[] nums) {
+        Arrays.sort(nums);
         // 0 1 2 3
         //[1,2,3,1]
-        //       i
+        //   i
 
-        //set: {1, 2, 3, }
 
-        Set<Integer> setNums = new HashSet<>(); //O(n)
-
-        for (int i = 0; i < nums.length; i++) {//O(n)
-            if (setNums.contains(nums[i])) {
+        for(int i = 1; i < nums.length; i++){
+            if(nums[i] == nums[i-1]){
                 return true;
             }
-            setNums.add(nums[i]);
-
         }
 
         return false;
-
+        
     }
 }
