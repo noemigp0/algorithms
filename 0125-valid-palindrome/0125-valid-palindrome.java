@@ -1,27 +1,37 @@
 class Solution {
     public boolean isPalindrome(String s) {
-       String cleanS = s.replaceAll("[^a-zA-Z0-9]+", "");
-       int left = 0;
-       int right = cleanS.length() -1;
+        
+        //a man, a plan, a canal: Panama
+        //       l
+        //                          r
 
-       //"amanaplanacanalPanama"
-       //  l
-       //                     r
 
-       while(left <= right){
+        int left = 0;
+        int right = s.length() -1;
 
-            if(Character.toLowerCase(cleanS.charAt(left)) != Character.toLowerCase(cleanS.charAt(right))){
+        while(left <= right){
+
+            if(!Character.isLetterOrDigit(s.charAt(left))){
+                left++;
+                continue;
+            }
+            if(!Character.isLetterOrDigit(s.charAt(right))){
+                right--;
+                continue;
+            }
+
+
+            if(Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))){
                 return false;
 
             }
+
             left++;
             right--;
 
-       }
 
-       return true;
+        }
 
-
-        
+        return true;
     }
 }
