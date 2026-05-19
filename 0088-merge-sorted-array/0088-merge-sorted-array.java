@@ -2,29 +2,28 @@ class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
 
         //         0 1 2 3 4 5
-        //nums1 = [2,0], m = 1, 
-        //           i
-        //         1
+        //nums1 = [1,2,3,0,5,6], m = 3, 
+        //             1  
+        //               w 
+        //nums2 = [2,5,6], n = 3  
+        //         2      
+        
+        int reader1 = m - 1;//3-1 = 2
+        int reader2 = n - 1; //3-1 = 2
+        int writter = m+n-1;//3+3-1 = 5
 
-        //nums2 = [1], n = 1
-        //         2  
+        while(reader2 >= 0){
 
-        int nums1Index = m - 1;//0
-        int nums2Index = n - 1;//0
-
-        for (int i = m + n - 1; i >= 0; i--) {
-            if (nums2Index < 0) {
-                break;
-            }
-            if (nums1Index >= 0 && nums1[nums1Index] > nums2[nums2Index]) {
-                nums1[i] = nums1[nums1Index];
-                nums1Index--;
+            if(reader1 >= 0 && nums1[reader1] > nums2[reader2]){// 
+                nums1[writter] = nums1[reader1];
+                reader1--;
 
             } else {
-                nums1[i] = nums2[nums2Index];
-                nums2Index--;
+                nums1[writter] = nums2[reader2];
+                reader2--;
+  
             }
-
+            writter--;
         }
 
     }
