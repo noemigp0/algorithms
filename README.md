@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/noemigp0/algorithms/tree/master/0217-contains-duplicate) |
 | [0283-move-zeroes](https://github.com/noemigp0/algorithms/tree/master/0283-move-zeroes) |
 | [0977-squares-of-a-sorted-array](https://github.com/noemigp0/algorithms/tree/master/0977-squares-of-a-sorted-array) |
+| [1752-check-if-array-is-sorted-and-rotated](https://github.com/noemigp0/algorithms/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [2956-find-common-elements-between-two-arrays](https://github.com/noemigp0/algorithms/tree/master/2956-find-common-elements-between-two-arrays) |
 ## Hash Table
 |  |
