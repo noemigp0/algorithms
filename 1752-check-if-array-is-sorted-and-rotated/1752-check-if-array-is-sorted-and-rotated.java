@@ -1,6 +1,6 @@
 class Solution {
     public boolean check(int[] nums) {
-        if (nums.length == 0 || isSorted(nums)) {
+        if (nums.length <=1 || isSorted(nums)) {
             return true;
         }
         //creating copy
