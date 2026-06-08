@@ -1,53 +1,29 @@
 class Solution {
     public boolean check(int[] nums) {
-        if (nums.length <=1 || isSorted(nums)) {
-            return true;
-        }
-        //creating copy
-        int[] numsSorted = new int[nums.length];
-        for (int i = 0; i < numsSorted.length; i++) {
-            numsSorted[i] = nums[i];
-        }
-        //        0 1 2 3 4
-        //nums = [2,1,3,4]
-        //            i
-        //       [1,3,4,2]
 
+        // 0 1 2 3 4
+        //[2,1,3,4]
+        //       i   
 
+        //1.-Solo puede haber un "break"
+        //2.-ya que compararlo de manera circular
 
-        int rotations = 0;
-        int len = numsSorted.length;
+        int n = nums.length - 1;
+        int breaks = 0;
 
-        while (rotations < len) {
-            int auxCopy = numsSorted[0];//2
+        for (int i = 1; i <= n; i++) {
 
-            for (int i = 0; i < len - 1; i++) {
-                numsSorted[i] = numsSorted[i + 1];
-            }
-            numsSorted[len - 1] = auxCopy;
-
-            if (isSorted(numsSorted)) {
-                return true;
-            }
-            rotations++;
-        }
-
-        return false;
-
-    }
-
-    // 0 1 2 3 
-    //[1,3,4,2]
-    //       i
-
-    public static boolean isSorted(int[] nums) {
-        for (int i = 1; i < nums.length; i++) {
             if (nums[i] < nums[i - 1]) {
-                return false;
+                breaks++;//1
             }
 
         }
-        return true;
+
+        if (nums[n] > nums[0]) {
+            breaks++;
+        }
+
+        return breaks <= 1;
 
     }
 }
