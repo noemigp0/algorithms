@@ -8,16 +8,16 @@ class Solution {
 
         int primaryDiagonal = 0;
         int secondaryDiagonal = 0;
-        int lastCol = mat.length - 1;//0
-        for (int row = 0; row < mat.length; row++) {
+        int n = mat.length - 1;//0
+        for (int row = 0; row <= n; row++) {
 
             primaryDiagonal += mat[row][row];//15
 
-            if (lastCol != row) {
-                secondaryDiagonal += mat[row][lastCol];//10
+            if ((n-row) != row) {
+                secondaryDiagonal += mat[row][n-row];//10
             }
 
-            lastCol--;
+
 
         }
         return secondaryDiagonal + primaryDiagonal;
