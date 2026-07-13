@@ -1,36 +1,27 @@
 class Solution {
     public int diagonalSum(int[][] mat) {
 
-        //row // col 0 1 2      
-        //0  //     [1,2,3],
-        //1         [4,5,6],
-        //2         [7,8,9]
+        //   0 1 2
+        //0 [1,2,3]    {0,0},{0,1},{0,2}
+        //1 [4,5,6]    {1,0},{1,1},{1,2}
+        //2 [7,8,9]    {2,0},{2,1},{2,2}
 
         int primaryDiagonal = 0;
         int secondaryDiagonal = 0;
-        int n = mat.length - 1;//0
-        for (int row = 0; row <= n; row++) {
+        int col = mat[0].length - 1;//3
 
-            primaryDiagonal += mat[row][row];//15
+        for (int row = 0; row < mat.length; row++) {//2
 
-            if ((n-row) != row) {
-                secondaryDiagonal += mat[row][n-row];//10
+            primaryDiagonal += mat[row][row];//{0,0} 1+5+9
+
+            if (row != col) {
+                secondaryDiagonal += mat[row][col];//{2,1} //3+7
             }
 
-
-
+            col--;
         }
-        return secondaryDiagonal + primaryDiagonal;
+
+        return primaryDiagonal + secondaryDiagonal;
+
     }
 }
-
-//        0 1 2 3  
-//0   // [1,1,1,1],
-//1   // [1,1,1,1],
-//2   // [1,1,1,1],
-//3   // [1,1,1,1]
-
-// [0][0] [0][1] [0][2] [0][3]
-// [1][0] [1][1] [1][2] [1][3]
-// [2][0] [2][1] [2][2] [2][3]
-// [3][0] [3][1] [3][2] [3][3]
