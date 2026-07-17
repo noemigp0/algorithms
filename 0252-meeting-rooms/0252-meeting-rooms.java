@@ -19,13 +19,12 @@ class Solution {
         int intervalsLen = intervals.length;
 
         for (int row = 0; row < intervalsLen - 1; row++) {
-            for (int col = 0; col < intervals[row].length; col++) {
+            
 
-                if (col == intervals[row].length-1 ) {
-                    if (intervals[row][col] > intervals[row + 1][0]) {
+                    if (intervals[row][1] > intervals[row + 1][0]) {
                         return false;
                     }
-                }
+                
 
                 //row = 0 col = 1
                 //row = 1 col = 0
@@ -33,7 +32,7 @@ class Solution {
                 //row = 1 col = 1;
                 //rom = 2 col = 1
 
-            }
+            
         }
 
         return true;
