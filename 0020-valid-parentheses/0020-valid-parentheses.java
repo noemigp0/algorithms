@@ -13,23 +13,25 @@ class Solution {
         Stack<Character> parenthesesStack = new Stack<>();
 
         for (int i = 0; i < s.length(); i++) {
+            
 
-            char openChar = s.charAt(i);
+            char curentChar = s.charAt(i);
 
-            if (openChar == '(' || openChar == '[' || openChar == '{') {
-                parenthesesStack.push(openChar);
+            if (curentChar == '(' || curentChar == '[' || curentChar == '{') {
+                parenthesesStack.push(curentChar);
 
-            } else if (!parenthesesStack.isEmpty() && openChar == ')' && parenthesesStack.peek() == '(') {
-                parenthesesStack.pop();
-
-            } else if (!parenthesesStack.isEmpty() && openChar == '}' && parenthesesStack.peek() == '{') {
-                parenthesesStack.pop();
-
-            } else if (!parenthesesStack.isEmpty() && openChar == ']' && parenthesesStack.peek() == '[') {
-                parenthesesStack.pop();
-            } else {
-                return false;
             }
+            if(parenthesesStack.isEmpty()){return false;}
+             if (curentChar == ')' && parenthesesStack.pop() != '(') {
+                return false;
+             }
+
+            if (curentChar == '}' && parenthesesStack.pop() != '{') {
+                return false;}
+
+             if (curentChar == ']' && parenthesesStack.pop() != '[') {
+                return false;
+            } 
         }
 
         return parenthesesStack.isEmpty();
