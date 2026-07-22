@@ -28,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/noemigp0/algorithms/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/noemigp0/algorithms/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0217-contains-duplicate](https://github.com/noemigp0/algorithms/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/noemigp0/algorithms/tree/master/0242-valid-anagram) |
 | [2956-find-common-elements-between-two-arrays](https://github.com/noemigp0/algorithms/tree/master/2956-find-common-elements-between-two-arrays) |
 ## Two Pointers
 |  |
@@ -46,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/noemigp0/algorithms/tree/master/0015-3sum) |
 | [0088-merge-sorted-array](https://github.com/noemigp0/algorithms/tree/master/0088-merge-sorted-array) |
 | [0217-contains-duplicate](https://github.com/noemigp0/algorithms/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/noemigp0/algorithms/tree/master/0242-valid-anagram) |
 | [0252-meeting-rooms](https://github.com/noemigp0/algorithms/tree/master/0252-meeting-rooms) |
 | [0977-squares-of-a-sorted-array](https://github.com/noemigp0/algorithms/tree/master/0977-squares-of-a-sorted-array) |
 ## Binary Search
@@ -59,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/noemigp0/algorithms/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0020-valid-parentheses](https://github.com/noemigp0/algorithms/tree/master/0020-valid-parentheses) |
 | [0125-valid-palindrome](https://github.com/noemigp0/algorithms/tree/master/0125-valid-palindrome) |
+| [0242-valid-anagram](https://github.com/noemigp0/algorithms/tree/master/0242-valid-anagram) |
 ## Math
 |  |
 | ------- |
